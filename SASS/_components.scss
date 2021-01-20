@@ -10,23 +10,53 @@
     .menu-bar{
         font-size: 3rem;
         color: var(--primary-color-light);
+        cursor: pointer;
     }
 }
 
 #navbar{
-    position: absolute;
+    position: fixed;
+    z-index: 200;
+    left: -100rem;
+    top: 5.65rem;
     background: var(--navbar-color-light);
     font-size: clamp(1.4rem, 44%, 1.6rem);
-    height: 100%;
+    height: 100vh;
     width: 50%;
+    overflow-y: scroll;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+
+
+    transition: all 1s;
+
 
     h1{
         text-align: center;
         padding: 2rem 2rem;
         border-bottom: 2px solid var(--secondary-color-light);
-        height: fit-content;
     }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li{
+            padding: 3rem 0;
+        }
+    }
+}
+
+.main-section{
+    padding-bottom: 5rem;   
+    line-height: 1.5;
+    letter-spacing: .05rem;
+}
+
+.show{
+    left: 0 !important;
 }

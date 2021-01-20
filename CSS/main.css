@@ -13,8 +13,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -27,18 +26,19 @@ body {
   height: 100%;
   background: var(--primary-color-light);
   color: var(--secondary-color-light);
+  position: relative;
 }
 
 header {
   background: var(--head-color-light);
   padding: 1rem 1.1rem;
+  position: fixed;
+  width: 100vw;
 }
 
 .bottom-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  position: relative;
+  padding-top: 18%;
   height: 100%;
 }
 
@@ -47,15 +47,9 @@ header {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   font-size: 1.3rem;
 }
@@ -63,28 +57,49 @@ header {
 .header .menu-bar {
   font-size: 3rem;
   color: var(--primary-color-light);
+  cursor: pointer;
 }
 
 #navbar {
-  position: absolute;
+  position: fixed;
+  z-index: 200;
+  left: -100rem;
+  top: 5.65rem;
   background: var(--navbar-color-light);
   font-size: clamp(1.4rem, 44%, 1.6rem);
-  height: 100%;
+  height: 100vh;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  overflow-y: scroll;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  transition: all 1s;
 }
 
 #navbar h1 {
   text-align: center;
   padding: 2rem 2rem;
   border-bottom: 2px solid var(--secondary-color-light);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar ul li {
+  padding: 3rem 0;
+}
+
+.main-section {
+  padding-bottom: 5rem;
+  line-height: 1.5;
+  letter-spacing: .05rem;
+}
+
+.show {
+  left: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */
