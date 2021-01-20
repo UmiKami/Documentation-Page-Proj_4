@@ -4,12 +4,12 @@
     align-items: center;
 
 
-    color: #fff;
+    color: var(--head-header-color);
     font-size: 1.3rem;
 
     .menu-bar{
         font-size: 3rem;
-        color: var(--primary-color-light);
+        color: var(--menu-color);
         cursor: pointer;
     }
 
@@ -22,7 +22,36 @@
             width: 8rem;
             margin-right: 2rem;
             border-radius: 50px;
-            background: #FFE0C7;
+            background: var(--toggle-color);
+            display: flex;
+            align-items: baseline;
+            position: relative;
+        }
+
+        .day-sphere{
+            width: 3rem;
+            right: 5rem;
+            position: absolute;
+            transition: right .3s linear, opacity .1s .05s;
+        }
+
+        .night-sphere{
+            position: absolute;
+            width: 3rem;
+            opacity: 0;
+            right: 2.5rem;
+
+            transition: right .3s linear,opacity .1s .04s;
+        }
+
+        .slide-right{
+            right: 0;
+            opacity: 0;
+        }
+
+        .show-night{
+            right: 0rem;
+            opacity: 1;
         }
     }
 }
@@ -32,7 +61,7 @@
     z-index: 200;
     left: -100rem;
     top: 5.8rem;
-    background: var(--navbar-color-light);
+    background: var(--navbar-color);
     font-size: clamp(1.4rem, 44%, 1.6rem);
     height: 100vh;
     width: 50%;
@@ -49,7 +78,7 @@
     h1{
         text-align: center;
         padding: 2rem 2rem;
-        border-bottom: 2px solid var(--secondary-color-light);
+        border-bottom: 2px solid var(--secondary-color);
     }
 
     .content-list{
@@ -61,11 +90,11 @@
         li{
             text-align: left;
             padding: 3rem 2rem;
-            border-bottom: .5px solid var(--secondary-color-light);
+            border-bottom: .5px solid var(--secondary-color);
         }
         
         &__links{
-            color: var(--secondary-color-light);
+            color: var(--secondary-color);
             font-weight: 500;
             text-decoration: none;
         }

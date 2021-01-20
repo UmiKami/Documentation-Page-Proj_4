@@ -15,13 +15,15 @@ body{
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
-    background: var(--primary-color-light);
-    color: var(--secondary-color-light);
+    background: var(--primary-color);
+    color: var(--secondary-color);
     position: relative;
+
+    transition: background-color .5s, color .5s;
 }
 
 header{
-    background: var(--head-color-light);
+    background: var(--head-color);
     padding: 1rem 1.1rem;
     position: fixed;
     width: 100vw;
