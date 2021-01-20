@@ -10,15 +10,22 @@ html{
 
 body{
     font-size: 1.6rem;
+    height: 100%;
     background: var(--primary-color-light);
     color: var(--secondary-color-light);
 }
 
 header{
     background: var(--head-color-light);
-    padding: 1rem 0;
+    padding: 1rem 1.1rem;
 }
 
 .bottom-part{
     display: flex;
+    position: relative;
+    height: 100%;
+}
+
+#main-doc{
+    padding: 1rem;
 }

@@ -22,18 +22,67 @@ html {
 
 body {
   font-size: 1.6rem;
+  height: 100%;
   background: var(--primary-color-light);
   color: var(--secondary-color-light);
 }
 
 header {
   background: var(--head-color-light);
-  padding: 1rem 0;
+  padding: 1rem 1.1rem;
 }
 
 .bottom-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  height: 100%;
+}
+
+#main-doc {
+  padding: 1rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.header .menu-bar {
+  font-size: 3rem;
+  color: var(--primary-color-light);
+}
+
+#navbar {
+  position: absolute;
+  background: var(--navbar-color-light);
+  font-size: clamp(1.4rem, 44%, 1.6rem);
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navbar h1 {
+  text-align: center;
+  padding: 2rem 2rem;
+  border-bottom: 2px solid var(--secondary-color-light);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 /*# sourceMappingURL=main.css.map */

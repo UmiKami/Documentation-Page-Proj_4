@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    color: #fff;
+    font-size: 1.3rem;
+
+    .menu-bar{
+        font-size: 3rem;
+        color: var(--primary-color-light);
+    }
+}
+
+#navbar{
+    position: absolute;
+    background: var(--navbar-color-light);
+    font-size: clamp(1.4rem, 44%, 1.6rem);
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    h1{
+        text-align: center;
+        padding: 2rem 2rem;
+        border-bottom: 2px solid var(--secondary-color-light);
+        height: fit-content;
+    }
+}
