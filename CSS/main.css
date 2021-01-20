@@ -1,0 +1,39 @@
+:root {
+  --primary-color-light: #FFFEF6;
+  --secondary-color-light: #0C4075;
+  --navbar-color-light: #FFF7B3;
+  --head-color-light: #FD872C;
+  --primary-color-dark: #17192B;
+  --secondary-color-dark: #1680ED;
+  --navbar-color-dark: #43476F;
+  --head-color-dark: #02002D;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--primary-color-light);
+  color: var(--secondary-color-light);
+}
+
+header {
+  background: var(--head-color-light);
+  padding: 1rem 0;
+}
+
+.bottom-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
