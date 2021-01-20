@@ -10,23 +10,80 @@
     .menu-bar{
         font-size: 3rem;
         color: var(--primary-color-light);
+        cursor: pointer;
+    }
+
+    .themeToggleEtPageName{
+        display: flex;
+        align-items: center;
+        
+        .themeToggle{
+            height: 3rem;
+            width: 8rem;
+            margin-right: 2rem;
+            border-radius: 50px;
+            background: #FFE0C7;
+        }
     }
 }
 
 #navbar{
-    position: absolute;
+    position: fixed;
+    z-index: 200;
+    left: -100rem;
+    top: 5.8rem;
     background: var(--navbar-color-light);
     font-size: clamp(1.4rem, 44%, 1.6rem);
-    height: 100%;
+    height: 100vh;
     width: 50%;
+    overflow-y: scroll;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+
+
+    transition: all .5s;
+
 
     h1{
         text-align: center;
         padding: 2rem 2rem;
         border-bottom: 2px solid var(--secondary-color-light);
-        height: fit-content;
     }
+
+    .content-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    
+        li{
+            text-align: left;
+            padding: 3rem 2rem;
+            border-bottom: .5px solid var(--secondary-color-light);
+        }
+        
+        &__links{
+            color: var(--secondary-color-light);
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.main-section{
+    padding-bottom: 5rem;   
+    line-height: 1.5;
+    letter-spacing: .05rem;
+
+    h1{
+        padding-bottom: 1rem;
+    }
+}
+
+.show{
+    left: 0 !important;
 }

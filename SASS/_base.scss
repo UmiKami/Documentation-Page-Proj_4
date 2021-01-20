@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    // outline: 1px solid blue;
 }
 
 html{
@@ -16,16 +17,19 @@ body{
     height: 100%;
     background: var(--primary-color-light);
     color: var(--secondary-color-light);
+    position: relative;
 }
 
 header{
     background: var(--head-color-light);
     padding: 1rem 1.1rem;
+    position: fixed;
+    width: 100vw;
 }
 
 .bottom-part{
     display: flex;
-    position: relative;
+    padding-top: 18%;
     height: 100%;
 }
 
