@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>night-sphere</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile---dark" transform="translate(-165.000000, -8.000000)">
+            <g id="Night-button" transform="translate(133.000000, 8.000000)">
+                <g id="night-sphere" transform="translate(32.000000, 0.000000)">
+                    <circle id="Oval" fill="#7E02FF" cx="7.5" cy="7.5" r="7.5"></circle>
+                    <path d="M6,2 C7.08082477,2 8.08155195,2.37723245 8.89930522,3.01853343 C8.76732226,3.00654165 8.63434868,3 8.5,3 C6.01471863,3 4,5.23857625 4,8 C4,10.2938811 5.39024102,12.2269753 7.2855979,12.8158103 C6.87559768,12.9361754 6.44457477,13 6,13 C3.23857625,13 1,10.5375661 1,7.5 C1,4.46243388 3.23857625,2 6,2 Z" id="Combined-Shape" fill="#0A187C"></path>
+                    <polygon id="Path" fill="#0A187C" points="6.98888006 8.99150776 8.50058061 5.83420828 9.15211671 8.99150776 5.80260554 6.5 8.96879737 6.5 10.5648043 6.5"></polygon>
+                    <polygon id="Path-Copy" fill="#0A187C" points="9.54991235 4.83420828 10.5022249 2.83420828 10.9126673 4.83420828 8.80260554 3.25595587 10.7971832 3.25595587 11.8026055 3.25595587"></polygon>
+                    <polygon id="Path-Copy-2" fill="#0A187C" points="11.5499123 11.8342083 12.5022249 9.83420828 12.9126673 11.8342083 10.8026055 10.2559559 12.7971832 10.2559559 13.8026055 10.2559559"></polygon>
+                    <polygon id="Path-Copy-3" fill="#0A187C" points="5.80081008 10.8342083 6.43568511 9.83420828 6.70931338 10.8342083 5.30260554 10.0450821 6.63232401 10.0450821 7.30260554 10.0450821"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
