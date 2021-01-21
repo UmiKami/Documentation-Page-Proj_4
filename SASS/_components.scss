@@ -26,13 +26,14 @@
             display: flex;
             align-items: baseline;
             position: relative;
+            cursor: pointer;
         }
 
         .day-sphere{
             width: 3rem;
             right: 5rem;
             position: absolute;
-            transition: right .3s linear, opacity .1s .05s;
+            transition: right .3s linear, opacity .1s linear;
         }
 
         .night-sphere{
@@ -41,7 +42,7 @@
             opacity: 0;
             right: 2.5rem;
 
-            transition: right .3s linear,opacity .1s .04s;
+            transition: right .15s  .06s linear,opacity .075s linear;
         }
 
         .slide-right{
@@ -60,7 +61,7 @@
     position: fixed;
     z-index: 200;
     left: -100rem;
-    top: 5.8rem;
+    top: 5.72rem;
     background: var(--navbar-color);
     font-size: clamp(1.4rem, 44%, 1.6rem);
     height: 100vh;
@@ -104,12 +105,36 @@
 
 
 .main-section{
-    padding-bottom: 5rem;   
+    padding-bottom: 4rem;   
     line-height: 1.5;
     letter-spacing: .05rem;
 
     h1{
-        padding-bottom: 1rem;
+        padding-bottom: 1.2rem;
+    }
+
+    p{
+        font-weight: 430;
+        margin-bottom: 2rem;
+    }
+
+    .examples{
+        font-weight: 480;
+    }
+
+    code{
+        font-weight: bold;
+        background: var(--code-bg-color);
+    }
+
+    .btn{
+        padding: 1.5rem 3rem;
+        font-size: 1.7rem;
+        border-radius: 30px;
+        border: none;
+        background-image: var(--btn-ex-color);
+        font-weight: 600;
+        color: var(--head-header-color);
     }
 }
 

@@ -7,6 +7,8 @@
     --head-color: var(--head-color-light);
     --toggle-color: var(--toggle-color-light);
     --head-header-color: var(--head-header-color-light);
+    --code-bg-color: var(--code-bg-color-light);
+    --btn-ex-color: var(--btn-ex-color-light);
     
     // Light theme
     --primary-color-light: #FFFEF6;
@@ -16,6 +18,9 @@
     --head-color-light: #FD872C;
     --toggle-color-light:  #FFE0C7;
     --head-header-color-light: var(--primary-color-light);
+    --code-bg-color-light: hsl(59, 100%, 92%);
+    --btn-ex-color-light: linear-gradient(to bottom right, #FD872C, red);
+    
     
     // Dark theme
     --primary-color-dark: #17192B;
@@ -25,4 +30,6 @@
     --head-color-dark: #02002D;
     --toggle-color-dark: #07086F;
     --head-header-color-dark: #9AD3FA;
+    --code-bg-color-dark: #0D3157;
+    --btn-ex-color-dark: linear-gradient(to bottom right, #0017e4, #07086F);
 }

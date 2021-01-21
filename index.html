@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/main.css">
     <title>Javascript Wiki</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/a11y-light.min.css">
+
     <script src="https://kit.fontawesome.com/39de7afbbe.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,30 +29,37 @@
     <nav id="navbar">
         <h1>Javascript Tutorials</h1>
         <ul class="content-list">
-            <li><a href="#" class="content-list__links">JS Output</a></li>
-            <li><a href="#" class="content-list__links">JS Statments</a></li>
-            <li><a href="#" class="content-list__links">JS Syntax</a></li>
-            <li><a href="#" class="content-list__links">JS Comments</a></li>
-            <li><a href="#" class="content-list__links">JS Variables</a></li>
-            <li><a href="#" class="content-list__links">JS Operators</a></li>
-            <li><a href="#" class="content-list__links">JS Arithmetic</a></li>
-            <li><a href="#" class="content-list__links">JS Assignment</a></li>
-            <li><a href="#" class="content-list__links">JS Data Types</a></li>
-            <li><a href="#" class="content-list__links">JS Functions</a></li>
-            <li><a href="#" class="content-list__links">JS Objects</a></li>
-            <li><a href="#" class="content-list__links">JS Events</a></li>
-            <li><a href="#" class="content-list__links">JS Strings</a></li>
-            <li><a href="#" class="content-list__links">JS String Methods</a></li>
-            <li><a href="#" class="content-list__links">JS Numbers</a></li>
+            <li><a href="#introduction" class="content-list__links">Introduction</a></li>
+            <li><a href="#" class="content-list__links">Output</a></li>
+            <li><a href="#" class="content-list__links">Statments</a></li>
+            <li><a href="#" class="content-list__links">Syntax</a></li>
+            <li><a href="#" class="content-list__links">Comments</a></li>
+            <li><a href="#" class="content-list__links">Variables</a></li>
+            <li><a href="#" class="content-list__links">Operators</a></li>
+            <li><a href="#" class="content-list__links">Arithmetic</a></li>
+            <li><a href="#" class="content-list__links">Assignment</a></li>
+            <li><a href="#" class="content-list__links">Data Types</a></li>
+            <li><a href="#" class="content-list__links">Functions</a></li>
+            <li><a href="#" class="content-list__links">Objects</a></li>
+            <li><a href="#" class="content-list__links">Events</a></li>
+            <li><a href="#" class="content-list__links">Strings</a></li>
+            <li><a href="#" class="content-list__links">String Methods</a></li>
+            <li><a href="#" class="content-list__links">Numbers</a></li>
         </ul>
     </nav>
 
     <div class="bottom-part">
         <main id="main-doc">
-            <section class="main-section">
-                <h1>Header 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt, similique accusamus provident maxime quasi? Vitae eos consequatur earum culpa!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt, similique accusamus provident maxime quasi? Vitae eos consequatur earum culpa!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quia asperiores quasi repellendus architecto amet quisquam possimus cum. Excepturi id architecto earum recusandae fugit soluta autem deleniti. Doloremque, assumenda iusto.</p>
+            <section class="main-section" id="introduction">
+                <h1>Introduction</h1>
+                <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies.</p>
+
+                <p class="examples">Example of what JavaScript can do:</p>
+                <pre class="code-parent">
+                    <code class="js">alert("Hello World!")</code>
+                </pre>
+
+                <button class="intro-ex-btn btn">Try It</button>
             </section>
             <section class="main-section">
                 <h1>Header 2</h1>
@@ -74,6 +84,9 @@
         </main>
     </div>
 
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script src="./app.js"></script>
 </body>
 </html>

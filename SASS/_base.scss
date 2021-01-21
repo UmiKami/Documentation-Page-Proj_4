@@ -26,6 +26,7 @@ header{
     background: var(--head-color);
     padding: 1rem 1.1rem;
     position: fixed;
+    z-index: 900;
     width: 100vw;
 }
 

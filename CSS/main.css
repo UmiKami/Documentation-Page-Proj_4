@@ -7,6 +7,8 @@
   --head-color: var(--head-color-light);
   --toggle-color: var(--toggle-color-light);
   --head-header-color: var(--head-header-color-light);
+  --code-bg-color: var(--code-bg-color-light);
+  --btn-ex-color: var(--btn-ex-color-light);
   --primary-color-light: #FFFEF6;
   --secondary-color-light: #0C4075;
   --menu-color-light:  #FFFEF6;
@@ -14,6 +16,8 @@
   --head-color-light: #FD872C;
   --toggle-color-light:  #FFE0C7;
   --head-header-color-light: var(--primary-color-light);
+  --code-bg-color-light: hsl(59, 100%, 92%);
+  --btn-ex-color-light: linear-gradient(to bottom right, #FD872C, red);
   --primary-color-dark: #17192B;
   --secondary-color-dark: #1680ED;
   --menu-color-dark: var(--secondary-color-dark);
@@ -21,6 +25,8 @@
   --head-color-dark: #02002D;
   --toggle-color-dark: #07086F;
   --head-header-color-dark: #9AD3FA;
+  --code-bg-color-dark: #0D3157;
+  --btn-ex-color-dark: linear-gradient(to bottom right, #0017e4, #07086F);
 }
 
 * {
@@ -47,6 +53,7 @@ header {
   background: var(--head-color);
   padding: 1rem 1.1rem;
   position: fixed;
+  z-index: 900;
   width: 100vw;
 }
 
@@ -88,13 +95,14 @@ header {
   display: flex;
   align-items: baseline;
   position: relative;
+  cursor: pointer;
 }
 
 .header .themeToggleEtPageName .day-sphere {
   width: 3rem;
   right: 5rem;
   position: absolute;
-  transition: right .3s linear, opacity .1s .05s;
+  transition: right .3s linear, opacity .1s linear;
 }
 
 .header .themeToggleEtPageName .night-sphere {
@@ -102,7 +110,7 @@ header {
   width: 3rem;
   opacity: 0;
   right: 2.5rem;
-  transition: right .3s linear,opacity .1s .04s;
+  transition: right .15s  .06s linear,opacity .075s linear;
 }
 
 .header .themeToggleEtPageName .slide-right {
@@ -119,7 +127,7 @@ header {
   position: fixed;
   z-index: 200;
   left: -100rem;
-  top: 5.8rem;
+  top: 5.72rem;
   background: var(--navbar-color);
   font-size: clamp(1.4rem, 44%, 1.6rem);
   height: 100vh;
@@ -157,13 +165,37 @@ header {
 }
 
 .main-section {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   line-height: 1.5;
   letter-spacing: .05rem;
 }
 
 .main-section h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+.main-section p {
+  font-weight: 430;
+  margin-bottom: 2rem;
+}
+
+.main-section .examples {
+  font-weight: 480;
+}
+
+.main-section code {
+  font-weight: bold;
+  background: var(--code-bg-color);
+}
+
+.main-section .btn {
+  padding: 1.5rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 30px;
+  border: none;
+  background-image: var(--btn-ex-color);
+  font-weight: 600;
+  color: var(--head-header-color);
 }
 
 .show {
