@@ -60,7 +60,8 @@ navBtn.addEventListener("click", function(){
     nav.classList.toggle("show");
 })
 
-////////////////////////////////////////////////////////////////////////////////////// MAIN SECTION
+////////////////////////////////////////////////////////////////////////////////////// 
+//MAIN SECTION
 
 // intro
 
@@ -68,4 +69,22 @@ const introExBtn = document.querySelector(".intro-ex-btn");
 
 introExBtn.addEventListener("click", function(){
     alert("Hello World!")
+})
+
+
+// Output
+
+function doIt() {
+    var headID = document.getElementsByTagName("head")[0];
+    var newScript = document.createElement("script");
+    newScript.type = "text/javascript";
+    newScript.innerHTML = document.getElementById("code-input").value;
+    headID.appendChild(newScript);
+}
+
+const codeInput = document.querySelector(".code-input");
+const codeInputBtn = document.querySelector(".code-input-btn");
+
+codeInputBtn.addEventListener(`click`, function(){
+    doIt();
 })
