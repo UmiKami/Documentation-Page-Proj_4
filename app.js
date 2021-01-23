@@ -31,7 +31,11 @@ themeToggleBtn.addEventListener("click", function(e){
         root.style.setProperty(`--toggle-color`, "var(--toggle-color-light)");
         root.style.setProperty(`--head-header-color`, "var(--head-header-color-light)");
         root.style.setProperty(`--code-bg-color`, "var(--code-bg-color-light)");        
-        root.style.setProperty(`--btn-ex-color`, "var(--btn-ex-color-light)");        
+        root.style.setProperty(`--btn-ex-color`, "var(--btn-ex-color-light)");
+        root.style.setProperty(`--input-text-color`, "var(--input-text-color-light)");        
+        root.style.setProperty(`--input-border-color`, "var(--input-border-color-light)");
+        root.style.setProperty(`--input-focus-color`, "var(--input-focus-color-light)");
+        root.style.setProperty(`--general-code-color`, "var(--general-code-color-light)");          
     }else{
         daySphere.classList.add("slide-right");
         nightSphere.classList.add("show-night");
@@ -47,6 +51,10 @@ themeToggleBtn.addEventListener("click", function(e){
         root.style.setProperty(`--head-header-color`, "var(--head-header-color-dark)");
         root.style.setProperty(`--code-bg-color`, "var(--code-bg-color-dark)");
         root.style.setProperty(`--btn-ex-color`, "var(--btn-ex-color-dark)");        
+        root.style.setProperty(`--input-text-color`, "var(--input-text-color-dark)");    
+        root.style.setProperty(`--input-border-color`, "var(--input-border-color-dark)");
+        root.style.setProperty(`--input-focus-color`, "var(--input-focus-color-dark)");        
+        root.style.setProperty(`--general-code-color`, "var(--general-code-color-dark)");        
         
     }
 })

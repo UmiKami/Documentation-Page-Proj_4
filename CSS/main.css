@@ -9,6 +9,10 @@
   --head-header-color: var(--head-header-color-light);
   --code-bg-color: var(--code-bg-color-light);
   --btn-ex-color: var(--btn-ex-color-light);
+  --input-text-color: var(--input-text-color-light);
+  --input-border-color: var(--input-border-color-light);
+  --input-focus-color: var(--input-focus-color-light);
+  --general-code-color: var(--general-code-color-light);
   --primary-color-light: #FFFEF6;
   --secondary-color-light: #0C4075;
   --menu-color-light:  #FFFEF6;
@@ -18,6 +22,10 @@
   --head-header-color-light: var(--primary-color-light);
   --code-bg-color-light: hsl(59, 100%, 92%);
   --btn-ex-color-light: linear-gradient(to bottom right, #FD872C, red);
+  --input-text-color-light: rgb(155, 70, 0);
+  --input-border-color-light: 1px solid orangered;
+  --input-focus-color-light: 0px 0px 6px rgb(255, 123, 0);
+  --general-code-color-light: rgba(50, 0, 187, 0.678);
   --primary-color-dark: #17192B;
   --secondary-color-dark: #1680ED;
   --menu-color-dark: var(--secondary-color-dark);
@@ -27,6 +35,10 @@
   --head-header-color-dark: #9AD3FA;
   --code-bg-color-dark: #0D3157;
   --btn-ex-color-dark: linear-gradient(to bottom right, #0017e4, #07086F);
+  --input-text-color-dark: #c18afc;
+  --input-border-color-dark: 1px solid rgb(0, 51, 190);
+  --input-focus-color-dark: 0px 0px 6px rgb(0, 68, 255);
+  --general-code-color-dark: #126cc5;
 }
 
 * {
@@ -198,20 +210,27 @@ header {
   background: transparent;
 }
 
+.main-section .gen-code {
+  font-size: 2.1rem;
+  background: var(--code-bg-color);
+  color: var(--general-code-color);
+}
+
 .main-section .code-input {
   height: 5rem;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
-  color: #b16400;
+  background-color: var(--code-bg-color);
+  color: var(--input-text-color);
   outline: none;
   font-size: 1.8rem;
   border-radius: 5px;
-  border: 1px solid orangered;
+  border: var(--input-border-color);
 }
 
 .main-section .code-input:focus {
-  box-shadow: 0px 0px 6px #ff7b00;
+  box-shadow: var(--input-focus-color);
 }
 
 .main-section .btn {

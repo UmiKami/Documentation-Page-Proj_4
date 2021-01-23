@@ -9,6 +9,10 @@
     --head-header-color: var(--head-header-color-light);
     --code-bg-color: var(--code-bg-color-light);
     --btn-ex-color: var(--btn-ex-color-light);
+    --input-text-color: var(--input-text-color-light);
+    --input-border-color: var(--input-border-color-light);
+    --input-focus-color: var(--input-focus-color-light);
+    --general-code-color: var(--general-code-color-light);
     
     // Light theme
     --primary-color-light: #FFFEF6;
@@ -20,6 +24,11 @@
     --head-header-color-light: var(--primary-color-light);
     --code-bg-color-light: hsl(59, 100%, 92%);
     --btn-ex-color-light: linear-gradient(to bottom right, #FD872C, red);
+    --input-text-color-light: rgb(155, 70, 0);
+    --input-border-color-light: 1px solid orangered;
+    --input-focus-color-light: 0px 0px 6px rgb(255, 123, 0);
+    --general-code-color-light: rgba(50, 0, 187, 0.678);
+
     
     
     // Dark theme
@@ -32,4 +41,9 @@
     --head-header-color-dark: #9AD3FA;
     --code-bg-color-dark: #0D3157;
     --btn-ex-color-dark: linear-gradient(to bottom right, #0017e4, #07086F);
+    --input-text-color-dark: #c18afc;
+    --input-border-color-dark: 1px solid rgb(0, 51, 190);
+    --input-focus-color-dark: 0px 0px 6px rgb(0, 68, 255);
+    --general-code-color-dark: #126cc5;
+
 }
