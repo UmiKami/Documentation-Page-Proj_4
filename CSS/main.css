@@ -23,9 +23,9 @@
   --code-bg-color-light: hsl(59, 100%, 92%);
   --btn-ex-color-light: linear-gradient(to bottom right, #FD872C, red);
   --input-text-color-light: rgb(155, 70, 0);
-  --input-border-color-light: 1px solid orangered;
+  --input-border-color-light: 1.5px solid orangered;
   --input-focus-color-light: 0px 0px 6px rgb(255, 123, 0);
-  --general-code-color-light: rgba(50, 0, 187, 0.678);
+  --general-code-color-light: rgba(42, 0, 158, 0.678);
   --primary-color-dark: #17192B;
   --secondary-color-dark: #1680ED;
   --menu-color-dark: var(--secondary-color-dark);
@@ -38,7 +38,7 @@
   --input-text-color-dark: #c18afc;
   --input-border-color-dark: 1px solid rgb(0, 51, 190);
   --input-focus-color-dark: 0px 0px 6px rgb(0, 68, 255);
-  --general-code-color-dark: #126cc5;
+  --general-code-color-dark: #8f90ff;
 }
 
 * {
@@ -212,6 +212,8 @@ header {
 
 .main-section .gen-code {
   font-size: 2.1rem;
+  font-weight: 550;
+  padding: .5rem .5rem;
   background: var(--code-bg-color);
   color: var(--general-code-color);
 }
@@ -219,7 +221,7 @@ header {
 .main-section .code-input {
   height: 5rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: .5rem 1rem;
   background-color: var(--code-bg-color);
   color: var(--input-text-color);

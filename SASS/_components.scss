@@ -138,6 +138,8 @@
 
     .gen-code{
         font-size: 2.1rem;
+        font-weight: 550;
+        padding: .5rem .5rem;
         background: var(--code-bg-color);
         color: var(--general-code-color);
     }
@@ -145,7 +147,7 @@
     .code-input{
         height: 5rem;
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         padding: .5rem 1rem;
         background-color: var(--code-bg-color);
         color: var(--input-text-color);
