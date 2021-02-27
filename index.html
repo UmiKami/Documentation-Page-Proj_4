@@ -31,7 +31,7 @@
         <ul class="content-list">
             <li><a href="#introduction" class="content-list__links">Introduction</a></li>
             <li><a href="#output" class="content-list__links">Output</a></li>
-            <li><a href="#" class="content-list__links">Statments</a></li>
+            <li><a href="#statements" class="content-list__links">Statements</a></li>
             <li><a href="#" class="content-list__links">Syntax</a></li>
             <li><a href="#" class="content-list__links">Comments</a></li>
             <li><a href="#" class="content-list__links">Variables</a></li>
@@ -76,9 +76,20 @@
                     <button class="code-input-btn  btn">Execute</button>
                 </div>
             </section>
-            <section class="main-section">
-                <h1>Header 3</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt, similique accusamus provident maxime quasi? Vitae eos consequatur earum culpa!</p>
+            <section class="main-section" id="statements">
+                <h1>Statements</h1>
+
+                <ul>
+                    <li class="statement__list-items">A computer program is a list of "instructions" to be "executed" by a computer.</li>
+                    <li class="statement__list-items">In a programming language, these programming instructions are called statements. </li>
+                    <li class="statement__list-items">A JavaScript program is a list of programming statements.</li>
+                </ul>
+
+                <p> <u>Example of a statement:</u> </p>
+
+                <pre class="code-parent">
+                    <code class="js">document.getElementById("demo").innerHTML = "Hello Dolly.";</code>
+                </pre>
             </section>
             <section class="main-section">
                 <h1>Header 4</h1>
@@ -94,6 +105,7 @@
     </div>
 
     <!-- Scripts -->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="./app.js"></script>

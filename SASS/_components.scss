@@ -130,6 +130,9 @@
         background: var(--code-bg-color);
         margin-bottom: 1.5rem;
         white-space: pre-wrap;
+
+        display: flex;
+        flex-direction: column;
     }
 
     code{
@@ -148,7 +151,7 @@
         height: 5rem;
         width: 100%;
         margin-bottom: 1.5rem;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         background-color: var(--code-bg-color);
         color: var(--input-text-color);
         outline: none;
@@ -171,6 +174,15 @@
         color: var(--head-header-color);
 
         cursor: pointer;
+    }
+
+    .statement__list-items{
+        margin-top: 1rem;
+        font-weight: 430;
+
+        &:last-child{
+            margin-bottom: 1.3rem;
+        }
     }
 }
 

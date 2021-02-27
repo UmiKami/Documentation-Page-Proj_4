@@ -44,7 +44,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -58,6 +59,7 @@ body {
   background: var(--primary-color);
   color: var(--secondary-color);
   position: relative;
+  -webkit-transition: background-color .5s, color .5s;
   transition: background-color .5s, color .5s;
 }
 
@@ -70,6 +72,8 @@ header {
 }
 
 .bottom-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 18%;
   height: 100%;
@@ -81,9 +85,15 @@ header {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--head-header-color);
   font-size: 1.3rem;
 }
@@ -95,8 +105,12 @@ header {
 }
 
 .header .themeToggleEtPageName {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .themeToggleEtPageName .themeToggle {
@@ -105,8 +119,12 @@ header {
   margin-right: 2rem;
   border-radius: 50px;
   background: var(--toggle-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   position: relative;
   cursor: pointer;
 }
@@ -115,6 +133,7 @@ header {
   width: 3rem;
   right: 5rem;
   position: absolute;
+  -webkit-transition: right .3s linear, opacity .1s linear;
   transition: right .3s linear, opacity .1s linear;
 }
 
@@ -123,6 +142,7 @@ header {
   width: 3rem;
   opacity: 0;
   right: 2.5rem;
+  -webkit-transition: right .15s  .06s linear,opacity .075s linear;
   transition: right .15s  .06s linear,opacity .075s linear;
 }
 
@@ -146,9 +166,17 @@ header {
   height: 100vh;
   width: 50%;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -160,9 +188,16 @@ header {
 
 #navbar .content-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 #navbar .content-list li {
@@ -182,7 +217,8 @@ header {
   padding-bottom: 4rem;
   line-height: 1.5;
   letter-spacing: .05rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-section h1 {
@@ -204,6 +240,13 @@ header {
   background: var(--code-bg-color);
   margin-bottom: 1.5rem;
   white-space: pre-wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-section code {
@@ -222,7 +265,7 @@ header {
   height: 5rem;
   width: 100%;
   margin-bottom: 1.5rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--code-bg-color);
   color: var(--input-text-color);
   outline: none;
@@ -232,7 +275,8 @@ header {
 }
 
 .main-section .code-input:focus {
-  box-shadow: var(--input-focus-color);
+  -webkit-box-shadow: var(--input-focus-color);
+          box-shadow: var(--input-focus-color);
 }
 
 .main-section .btn {
@@ -244,6 +288,15 @@ header {
   font-weight: 600;
   color: var(--head-header-color);
   cursor: pointer;
+}
+
+.main-section .statement__list-items {
+  margin-top: 1rem;
+  font-weight: 430;
+}
+
+.main-section .statement__list-items:last-child {
+  margin-bottom: 1.3rem;
 }
 
 .show {
