@@ -79,6 +79,26 @@ header {
   padding: 1rem;
 }
 
+::-webkit-scrollbar {
+  width: 1.5rem;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: var(--secondary-color);
+  transition: all .8s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1c6dbd;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 6px;
+  background: var(--secondary-color);
+}
+
 .header {
   display: flex;
   justify-content: space-between;

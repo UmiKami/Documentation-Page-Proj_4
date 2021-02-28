@@ -1,18 +1,43 @@
+//////////////////////////////////////////////////////////////
+// SCROLLBAR
+
+::-webkit-scrollbar{
+    width: 1.5rem;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: var(--secondary-color);
+    transition: all .8s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #1c6dbd;
+}
+
+::-webkit-scrollbar-corner{
+    border-radius: 6px;
+    background: var(--secondary-color);
+}
+
+//////////////////////////////////////////////////////////////
+// HEADER AND NAVBAR
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+    
+    
     color: var(--head-header-color);
     font-size: 1.3rem;
-
+    
     .menu-bar{
         font-size: 3rem;
         color: var(--menu-color);
         cursor: pointer;
     }
-
+    
     .themeToggleEtPageName{
         display: flex;
         align-items: center;
@@ -28,28 +53,28 @@
             position: relative;
             cursor: pointer;
         }
-
+        
         .day-sphere{
             width: 3rem;
             right: 5rem;
             position: absolute;
             transition: right .3s linear, opacity .1s linear;
         }
-
+        
         .night-sphere{
             position: absolute;
             width: 3rem;
             opacity: 0;
             right: 2.5rem;
-
+            
             transition: right .15s  .06s linear,opacity .075s linear;
         }
-
+        
         .slide-right{
             right: 0;
             opacity: 0;
         }
-
+        
         .show-night{
             right: 0rem;
             opacity: 1;
@@ -68,27 +93,27 @@
     width: 50%;
     overflow-y: scroll;
     border-right: .5px solid var(--secondary-color);
-
+    
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
-
+    
+    
     transition: all .5s;
-
-
+    
+    
     h1{
         text-align: center;
         padding: 2rem 2rem;
         border-bottom: 2px solid var(--secondary-color);
     }
-
+    
     .content-list{
         list-style: none;
         display: flex;
         flex-direction: column;
         align-items: stretch;
-    
+        
         li{
             text-align: left;
             padding: 3rem 2rem;
@@ -104,6 +129,8 @@
 }
 
 
+//////////////////////////////////////////////////////////////
+// MAIN SECTION
 
 .main-section{
     width: 100%;
@@ -111,7 +138,7 @@
     line-height: 1.5;
     letter-spacing: .05rem;
     box-sizing: border-box;
-
+    
     .section-headers{
         font-weight: bolder;
         padding-bottom: 1.2rem;
