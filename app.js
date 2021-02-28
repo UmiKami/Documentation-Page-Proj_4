@@ -1,4 +1,4 @@
-// theme functionalities
+// PAGE THEMES
 const themeToggleBtn = document.querySelector(".themeToggle");
 const daySphere = document.querySelector(".day-sphere");
 const nightSphere = document.querySelector(".night-sphere")
@@ -59,6 +59,9 @@ themeToggleBtn.addEventListener("click", function(e){
     }
 })
 
+////////////////////////////////////////////////////////////////////////////////////// 
+// HEADER
+
 // Nav functionalities
 const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector("#navbar");
@@ -67,6 +70,16 @@ const nav = document.querySelector("#navbar");
 navBtn.addEventListener("click", function(){
     nav.classList.toggle("show");
 })
+
+// Header and Main Section Separation
+
+const header = document.querySelector(".header");
+const headerHeight = header.clientHeight;
+
+const mainDoc = document.querySelector(".bottom-part");
+
+mainDoc.style.paddingTop = `${headerHeight + 15}px`;
+
 
 ////////////////////////////////////////////////////////////////////////////////////// 
 //MAIN SECTION

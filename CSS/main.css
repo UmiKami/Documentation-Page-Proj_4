@@ -44,8 +44,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -59,7 +58,6 @@ body {
   background: var(--primary-color);
   color: var(--secondary-color);
   position: relative;
-  -webkit-transition: background-color .5s, color .5s;
   transition: background-color .5s, color .5s;
 }
 
@@ -72,10 +70,7 @@ header {
 }
 
 .bottom-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding-top: 18%;
   height: 100%;
 }
 
@@ -85,15 +80,9 @@ header {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: var(--head-header-color);
   font-size: 1.3rem;
 }
@@ -105,12 +94,8 @@ header {
 }
 
 .header .themeToggleEtPageName {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header .themeToggleEtPageName .themeToggle {
@@ -119,12 +104,8 @@ header {
   margin-right: 2rem;
   border-radius: 50px;
   background: var(--toggle-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   position: relative;
   cursor: pointer;
 }
@@ -133,7 +114,6 @@ header {
   width: 3rem;
   right: 5rem;
   position: absolute;
-  -webkit-transition: right .3s linear, opacity .1s linear;
   transition: right .3s linear, opacity .1s linear;
 }
 
@@ -142,7 +122,6 @@ header {
   width: 3rem;
   opacity: 0;
   right: 2.5rem;
-  -webkit-transition: right .15s  .06s linear,opacity .075s linear;
   transition: right .15s  .06s linear,opacity .075s linear;
 }
 
@@ -166,17 +145,10 @@ header {
   height: 100vh;
   width: 50%;
   overflow-y: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-right: 0.5px solid var(--secondary-color);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-transition: all .5s;
+  flex-direction: column;
+  align-items: stretch;
   transition: all .5s;
 }
 
@@ -188,16 +160,9 @@ header {
 
 #navbar .content-list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #navbar .content-list li {
@@ -217,13 +182,17 @@ header {
   padding-bottom: 4rem;
   line-height: 1.5;
   letter-spacing: .05rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.main-section h1 {
+.main-section .section-headers {
   font-weight: bolder;
   padding-bottom: 1.2rem;
+}
+
+.main-section h3 {
+  font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 .main-section p {
@@ -240,17 +209,18 @@ header {
   background: var(--code-bg-color);
   margin-bottom: 1.5rem;
   white-space: pre-wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .main-section code {
   background: transparent;
+}
+
+.main-section .inline-code {
+  background-color: var(--code-bg-color);
+  font-size: 1.8rem;
+  color: #c43a18;
 }
 
 .main-section .gen-code {
@@ -275,17 +245,16 @@ header {
 }
 
 .main-section .code-input:focus {
-  -webkit-box-shadow: var(--input-focus-color);
-          box-shadow: var(--input-focus-color);
+  box-shadow: var(--input-focus-color);
 }
 
 .main-section .btn {
-  padding: 1.5rem 3rem;
+  padding: .7rem 2rem;
   font-size: 1.7rem;
-  border-radius: 30px;
+  border-radius: 6px;
   border: none;
   background-image: var(--btn-ex-color);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--head-header-color);
   cursor: pointer;
 }
