@@ -128,7 +128,6 @@ navLink.forEach((e)=>{
             behavior: 'smooth',
         });
 
-        console.log(section.clientHeight - headerHeight);
     })
 })
 

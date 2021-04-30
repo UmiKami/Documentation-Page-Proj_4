@@ -1,0 +1,101 @@
+@media screen and (min-width: 800px) {
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+        color: var(--head-header-color);
+        font-size: 1.3rem;
+        
+        .menu-bar{
+            display: none;
+        }
+        
+        .themeToggleEtPageName{
+            
+            .themeToggle{
+                height: 3rem;
+                width: 8rem;
+                margin-right: 2rem;
+                border-radius: 50px;
+                background: var(--toggle-color);
+                display: flex;
+                align-items: baseline;
+                position: relative;
+                cursor: pointer;
+            }
+            
+            .day-sphere{
+                width: 3rem;
+                right: 5rem;
+                position: absolute;
+                transition: right .3s linear, opacity .1s linear;
+            }
+            
+            .night-sphere{
+                position: absolute;
+                width: 3rem;
+                opacity: 0;
+                right: 2.5rem;
+                
+                transition: right .15s  .06s linear,opacity .075s linear;
+            }
+            
+            .slide-right{
+                right: 0;
+                opacity: 0;
+            }
+            
+            .show-night{
+                right: 0rem;
+                opacity: 1;
+            }
+        }
+    }
+    
+    #navbar{
+        position: sticky;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 25%;
+        overflow-y: auto;
+        border-right: .5px solid var(--secondary-color);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        
+        
+        transition: all .5s;
+        
+        
+        h1{
+            text-align: center;
+            padding: 2rem 2rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .content-list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            
+            li{
+                text-align: left;
+                padding: 3rem 2rem;
+                border-bottom: .5px solid var(--secondary-color);
+            }
+            
+            &__links{
+                color: var(--secondary-color);
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+}
