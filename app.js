@@ -1,3 +1,5 @@
+console.log(window.innerWidth);
+
 // PAGE THEMES
 const themeToggleBtn = document.querySelector(".themeToggle");
 const daySphere = document.querySelector(".day-sphere");
@@ -78,13 +80,13 @@ const headerHeight = header.clientHeight;
 
 const mainDoc = document.querySelector(".bottom-part");
 
-mainDoc.style.paddingTop = `${headerHeight + 15}px`;
+mainDoc.style.paddingTop = `${headerHeight}px`;
 
 
 ////////////////////////////////////////////////////////////////////////////////////// 
 //MAIN SECTION
 
-// intro
+// Intro
 
 const introExBtn = document.querySelector(".intro-ex-btn");
 
@@ -109,3 +111,33 @@ const codeInputBtn = document.querySelector(".code-input-btn");
 codeInputBtn.addEventListener(`click`, function(){
     doIt();
 })
+
+// Scroll
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((e)=>{
+    e.addEventListener("click", (l)=>{
+        l.preventDefault();
+
+        const id = l.currentTarget.getAttribute('href').slice(1);
+        const section = document.getElementById(id);
+
+        window.scroll({
+            top: section.offsetTop - headerHeight,
+            behavior: 'smooth',
+        });
+
+        console.log(section.clientHeight - headerHeight);
+    })
+})
+
+// Nav
+
+if(window.innerWidth < 800){
+    navLink.forEach((e)=>{
+        e.addEventListener("click", ()=>{
+            nav.classList.toggle("show");
+        })
+    })
+}

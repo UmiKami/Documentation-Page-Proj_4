@@ -4,10 +4,12 @@ Freecodecamp challenge: https://www.freecodecamp.org/learn/responsive-web-design
 
 # Objectives
 
-1. Create a documentation page about javascript.
-2. Make it responsive - mobile first approach.
-3. Add dark and light (default) mode option.
+1. Create a documentation page about javascript. - DONE
+2. Make it responsive - mobile first approach. - DONE
+3. Add dark and light (default) mode option. - DONE
 
-Note: Dark and light mode functionalities are not requeried but I am doing it to make it more challenging and learn new things.
+Note: Dark and light mode functionalities are not required but I am doing it to make it more challenging and learn new things.
 
 # Known Issues
+
+None
