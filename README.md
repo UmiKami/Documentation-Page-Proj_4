@@ -2,6 +2,10 @@
 
 Freecodecamp challenge: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
 
+# Page Preview
+
+https://umikami.github.io/Documentation-Page-Proj_4/
+
 # Objectives
 
 1. Create a documentation page about javascript. - DONE
